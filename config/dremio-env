@@ -1,0 +1,6 @@
+# Limite la mémoire JVM de Dremio pour éviter les pauses GC trop longues
+# (qui provoquent des timeouts Zookeeper internes et un arrêt du nœud "master")
+# sur une machine aux ressources partagées entre plusieurs services lourds.
+
+DREMIO_MAX_HEAP_MEMORY_SIZE_MB=2048
+DREMIO_MAX_DIRECT_MEMORY_SIZE_MB=2048

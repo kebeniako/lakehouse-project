@@ -111,8 +111,7 @@ Comprendre le sujet, analyser l'API FakeStoreAPI, prendre les decisions d'archit
 
 ## Prochaine etape
 
-Etape 1 : Infrastructure Docker
-- Ecrire le fichier docker-compose.yml
+
+Partie 1 : Conception et déploiement de l'infrastructure complète- Ecrire le fichier docker-compose.yml
 - Deployer tous les services
 - Verifier que tout communique
-EOF

@@ -1,0 +1,20 @@
+# Configuration Prometheus — scrape des métriques NiFi
+# NiFi 2.x expose ses métriques via un endpoint REST natif (pas un port
+# séparé ni un Reporting Task, supprimé dans cette version) :
+#   https://nifi:8443/nifi-api/flow/metrics/prometheus
+# Cet endpoint nécessite une authentification par jeton (voir README pour
+# la procédure de génération du jeton, à placer dans config/nifi_token.txt)
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'nifi'
+    metrics_path: '/nifi-api/flow/metrics/prometheus'
+    scheme: https
+    tls_config:
+      insecure_skip_verify: true
+    authorization:
+      type: Bearer
+      credentials_file: /etc/prometheus/nifi_token.txt
+    static_configs:
+      - targets: ['nifi:8443']
