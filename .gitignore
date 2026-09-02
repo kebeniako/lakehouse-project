@@ -1,3 +1,75 @@
-config/nifi_token.txt
+# ============================================
+# SECRETS ET TOKENS
+# ============================================
 .env
+.env.*
+!.env.example
+config/nifi_token.txt
+*.token
+*.key
+*.pem
+*.crt
+secrets/
+
+# ============================================
+# PYTHON
+# ============================================
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ============================================
+# DONNÉES ET LOGS
+# ============================================
+data/
+*.log
+*.tmp
+*.csv
+*.parquet
+*.json
+!nifi-flow/*.json
+
+# ============================================
+# VOLUMES DOCKER
+# ============================================
+nifi_state/
+nifi_db/
+nifi_flowfile/
+nifi_content/
+nifi_provenance/
+postgres_data/
+spark-warehouse/
+metastore_db/
+derby.log
+warehouse/
+raw/
+
+# ============================================
+# IDE
+# ============================================
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ============================================
+# AIRFLOW
+# ============================================
+logs/
+dags/__pycache__/
+dags/*.pyc
+airflow-webserver.pid
+airflow-scheduler.pid
