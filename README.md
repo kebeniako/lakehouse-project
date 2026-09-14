@@ -13,6 +13,8 @@
 
 **Auteur** : Niako KEBE — Étudiante en Data Engineering DIT  — kebeniako17@gmail.com
 
+
+**Vidéo de présentation** : [Projet_Examen_Ecosysteme_BigData_Niako_KEBE.mp4](./Projet_Examen_Ecosysteme_BigData_Niako_KEBE.mp4)
 ---
 
 ##  Objectif du projet
