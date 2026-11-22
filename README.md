@@ -11,7 +11,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?logo=postgresql&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
 
-**Auteur** : Niako KEBE — Étudiante en Data Engineering DIT  — kebeniako17@gmail.com
+**Auteur** : Niako KEBE   — kebeniako17@gmail.com
 
 
 **Vidéo de présentation** : [Projet_Examen_Ecosysteme_BigData_Niako_KEBE.mp4](./Projet_Examen_Ecosysteme_BigData_Niako_KEBE.mp4)
